@@ -1,0 +1,376 @@
+<app-header></app-header>
+<div id="carousel-container">
+  <div id="carousel">
+    <div class="carousel-item" *ngFor="let item of carouselItems; let i = index" [ngClass]="{ active: i === currentIndex }">
+      <img [src]="item.image" alt="Slide {{ i + 1 }}">
+      <div class="overlay">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-buttons">
+  <div class="circle-indicator" *ngFor="let item of carouselItems; let i = index" (click)="showSlide(i)" [ngClass]="{ active: i === currentIndex }"></div>
+</div>
+<!-- FIN DE CARRUSEL -->
+
+<!-- INICIO DE DIVISONES -->
+
+<div class="mobile-section">
+  <div class="left-container">
+    <div class="circle-container">
+      <div class="circle-division-movil-left"></div>
+    </div>
+    <div class="text-container">
+      <p>¡REPORTE DE PLAGA AHORA!</p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="circle-division-movil"></div>
+    <img class="image-container" src="assets/images/waring.png" alt="Imagen de 50 x 50">
+  </div>
+</div>
+
+<!-- FIN DE DIVISIONES -->
+
+<!-- INICIO DEPORTE DE PLAGAS -->
+<div class="mobile-container-mc">
+  <div class="info-container-ic">
+    <h2 style="align-items: center;">!PLAGA REPORTADA EN ECUADOR¡</h2>
+    <p>Tome precauciones un reporte de plaga agraria está afectando actualmente algunos cultivos en diferentes provincias del Ecuador, es importante leer el articulo completo para no sufrir perdidas importantes en sus sembríos.
+      <br>
+      <br>
+      Ingrese al portal actual para informarse sobre la plaga <b>Negra de banano</b> y tome distintas medidas recomendadas por profesionales expertos en el area del cuidado agricola.
+    </p>
+    <span><b>Provincias reportadas:</b></span>
+    <span>Loja</span>
+    <span>Sucumbios</span>
+  </div>
+  <div class="image-container-ic">
+    <img class="image-ec" src="assets/images/mapec.png" alt="Descripción de la imagen">
+  </div>
+</div>
+<div class="responsive-container">
+  <p>
+    Observa el informe completo sobre la plaga que actualmente esta atacando los cultivos del Ecuador
+  </p>
+  <button class="styled-button">Ver reporte completo</button>
+</div>
+<!-- FIN REPORTE DE PLAGAS -->
+
+<!-- INICIO DE DIVISONES -->
+<div class="mobile-section">
+  <div class="left-container">
+    <div class="circle-container">
+      <div class="circle-division-movil-left"></div>
+    </div>
+    <div class="text-container">
+      <p>BLOGS DE PROVEEDOR</p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="circle-division-movil"></div>
+    <img class="image-container" src="assets/images/blogger.png" alt="Imagen de 50 x 50">
+  </div>
+</div>
+<!-- FIN DE DIVISIONES -->
+
+<!-- INICIO DE BLOGS DE PROVEEDOR -->
+
+<div class="mobile-parent-container">
+  <div class="info-container">
+    <h2>OBSERVA NUESTROS
+      BLOGS</h2>
+    <p>Echa un vistazo a la sección de blogs de nuestros proveedores los cuales suben información sobre sus productos o sus investigaciones las cuales pueden serte muy útiles</p>
+    <button class="styled-button-blog">Ver BLOGS</button>
+  </div>
+
+  <div class="img-container-blog">
+    <img class="image-grupo" src="assets/images/grupo.png">
+  </div>
+</div>
+<!-- FIN DE BLOGS PROVEEDORES -->
+
+<!-- INICIO DE DIVISONES -->
+
+<div class="mobile-section" id="responsive-section-continue">
+  <div class="left-container">
+    <div class="circle-container">
+      <div class="circle-division-movil-left"></div>
+    </div>
+    <div class="text-container">
+      <p>PRODUCTOS PROVEEDORES</p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="circle-division-movil"></div>
+    <img class="image-container" src="assets/images/boxproduct.png" alt="Imagen de 50 x 50">
+  </div>
+</div>
+
+<!-- FIN DE DIVISIONES -->
+
+<!-- INICIO PRODUCTOS PROVEEDORES Y DIVISIONES -->
+<div class="carousel-title-container">
+  <h2 class="carousel-title">CONOCE LOS PRODUCTOS<br> DE NUESTROS PROVEEDORES</h2>
+  <div class="carousel-container-pr">
+    <button (click)="prevImage()" class="carousel-btn-pr carousel-btn-pr-prev">&#10094;</button>
+    <img [src]="imagesProveedor[currentIndexProveedor]" alt="Carousel Image" class="carousel-image-pr">
+    <button (click)="nextImage()" class="carousel-btn-pr carousel-btn-pr-next">&#10095;</button>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="title-container">
+    <h2>DIVISIONES</h2>
+  </div>
+  <div class="options-container">
+    <div class="option">
+      <span><a href="#">Fungicidas</a></span>
+      <div class="circle"></div>
+    </div>
+    <div class="option">
+      <span><a href="#">Herbicidas</a></span>
+      <div class="circle"></div>
+    </div>
+    <div class="option">
+      <span><a href="#">Insecticidas</a></span>
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+<!-- FIN DE PRODUCTOS PROVEEDORES -->
+
+<!-- INICIO DE DIVISONES -->
+<div class="mobile-section">
+  <div class="left-container">
+    <div class="circle-container">
+      <div class="circle-division-movil-left"></div>
+    </div>
+    <div class="text-container">
+      <p>ATENCIÓN AGRARIA</p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="circle-division-movil"></div>
+    <img class="image-container" src="assets/images/workess.png" alt="Imagen de 50 x 50">
+  </div>
+</div>
+<!-- FIN DE DIVISIONES -->
+
+<!-- INICIO ATENCIÓN AGRARIA -->
+<div class="container-aten">
+
+  <div class="content-aten">
+    <img src="assets/images/atencionagro.jpg" class="image-aten">
+
+    <div class="text-ata-aten">
+      <h2>ATENCIÓN AGRARIA</h2>
+      <p>Al registrarse en nuestro sistema usted va a poder acceder a la sección de perfiles profesionales agrónomos cerca de su localidad, recibiendo  asistencia tanto virtual como presencial.</p>
+    </div>
+  </div>
+
+  <span class="line-ata-aten"></span>
+  <div class="container-atenn">
+    <div class="box-aten">
+      <a href="#">Ver perfiles profesionales</a>
+      <img src="assets/images/vector.png" class="icon-aten">
+    </div>
+  </div>
+</div>
+<!-- FIN ATENCIÓN AGRARIA -->
+
+<!-- INICIO DE DIVISONES -->
+
+<div class="mobile-section">
+  <div class="left-container">
+    <div class="circle-container">
+      <div class="circle-division-movil-left"></div>
+    </div>
+    <div class="text-container">
+      <p>CONSEJOS AGRARIOS</p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="circle-division-movil"></div>
+    <img class="image-container" src="assets/images/message.png" alt="Imagen de 50 x 50">
+  </div>
+</div>
+<!-- FIN DE DIVISIONES -->
+
+<!-- INICIO CONSEJOS AGRARIOS -->
+<div class="container-custom">
+
+  <div class="content-custom">
+    <div class="text-custom">
+      <h2>CONSEJOS AGRARIOS</h2>
+      <p>Acceda a los mejores concejos dictados por los profesionales registrados en nuestro sistema, puede buscar las mejores recomendaciones en nuestra sección de concejos agrarios.</p>
+    </div>
+
+    <img src="assets/images/consejos.jpg" class="image-custom">
+  </div>
+
+  <span class="line-custom"></span>
+  <div class="container-button">
+    <div class="box-custom">
+      <a href="#">Ver consejos agrarios</a>
+      <img src="assets/images/vectortwo.png" class="icon-custom">
+    </div>
+  </div>
+</div>
+
+<!-- FIN CONSEJOS AGRARIOS -->
+
+<!-- INICIO DE DIVISONES -->
+<div class="mobile-section">
+  <div class="left-container">
+    <div class="circle-container">
+      <div class="circle-division-movil-left"></div>
+    </div>
+    <div class="text-container">
+      <p>INFORMES SOBRE PLAGAS</p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="circle-division-movil"></div>
+    <img class="image-container" src="assets/images/pagess.png" alt="Imagen de 50 x 50">
+  </div>
+</div>
+<!-- FIN DE DIVISIONES -->
+
+<!-- INICIO DE INFORMES PUBLICADOS -->
+<div class="container-aten">
+
+  <div class="content-aten">
+    <img src="assets/images/informesagro.jpg" class="image-aten">
+
+    <div class="text-ata-aten">
+      <h2>VER INFORMES PUBLICADOS POR PROFESIONALES</h2>
+      <p>Observa de manera gratuita los informes de nuestros profesionales rgistrados sobre las diferentes plagas y aprende mucho sobre como combatirlas, etc.</p>
+    </div>
+  </div>
+
+  <span class="line-ata-aten"></span>
+  <div class="container-atenn">
+    <div class="box-aten">
+      <a href="#">Ver informes publicados</a>
+      <img src="assets/images/pageboton.png" class="icon-aten">
+    </div>
+  </div>
+</div>
+
+<!-- FIN DE INFORMES  -->
+
+<!-- INICIO DE DIVISONES -->
+
+<div class="mobile-section">
+  <div class="left-container">
+    <div class="circle-container">
+      <div class="circle-division-movil-left"></div>
+    </div>
+    <div class="text-container">
+      <p>REPORTAR PLAGA</p>
+    </div>
+  </div>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="circle-division-movil"></div>
+    <img class="image-container" src="assets/images/conferencee.png" alt="Imagen de 50 x 50">
+  </div>
+</div>
+<!-- FIN DE DIVISIONES -->
+
+<!-- INICIO DE FORMULARIO -->
+<div class="container-form">
+  <div class="form-content">
+    <h2 class="form-title">REPORTE DE LA COMUNIDAD</h2>
+    <p class="form-description">Ayudanos reportando una plaga de tu localidad, esto nos ayudara a levantar un reporte a nivel general y empezar a tomar acciones a nuestro nivel para que todos podamos tomar medidas precautelares.</p>
+
+    <form class="contact-form">
+      <label class="form-label" for="titulo">Título:</label>
+      <input class="form-input" type="text" id="titulo" name="titulo" placeholder="Ingrese su título" required>
+
+      <label class="form-label" for="asunto">Asunto:</label>
+      <input class="form-input" type="text" id="asunto" name="asunto" placeholder="Ingrese el asunto" required>
+
+      <label class="form-label" for="provincia">Provincia:</label>
+      <select class="form-select" id="provincia" name="provincia" required>
+        <option value="" disabled selected>Seleccione su provincia</option>
+        <option value="provincia1">Provincia</option>
+        <option value="provincia2">Provincia</option>
+        <option value="provincia3">Provincia</option>
+      </select>
+      <div>
+        <button class="form-button" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- FIN DE FORMULARIO -->
+
+<!-- INICIO CHAT ARTIFICAL -->
+<div class="chat-bubble" (click)="toggleChat()">
+  Asistencia<br>artifical
+  <i class="fa fa-comments"></i>
+</div>
+
+<div *ngIf="chatOpen" class="chat-window" [ngClass]="{ 'open': chatOpen}">
+  <div *ngIf="loading" class="loader-container">
+    <div class="loader"></div>
+    <p style="color: #ffffff;">Agrisoft System<br><b>with OPENAI</b></p>
+  </div>
+  <div class="chat-header">
+    <div class="logo-title-container">
+      <img src="assets/images/agrisoft.png" class="chat-logo">
+      <h2>Asistencia con IA</h2>
+
+      <button #micButton
+      (click)="startDictationWithPrompt()"
+      [ngClass]="{'mic-on': isListening}"
+    >
+      <i class="fas fa-microphone" title="Activar el microfono"></i>
+    </button>
+
+      <button #volumeIcon (click)="toggleSpeech()">
+        <i title="Parlante de sonido de AI"
+        class="fa"
+        [ngClass]="{'fa-volume-up': !speechSynthesisIsSpeaking,
+                   'fa-volume-off': speechSynthesisIsSpeaking}">
+      </i>
+      </button>
+    </div>
+    <button (click)="toggleChat()">X</button>
+  </div>
+
+  <div *ngIf="!primerMensajeEnviado" class="user-message-example ">
+    <p class="mensaje-ejemplo">Interactúa con la inteligencia artificial, puedes pulsar la opción del micrófono y dictar o escribir en el prompt, prueba a decir:</p>
+    <p class="mensaje-ejemplo-a">Dame un consejo sobre plantaciones de banano verde</p>
+  </div>
+
+  <div class="chat-history">
+    <div *ngFor="let message of chatHistory" [ngClass]="{'user-message': message.isFromUser, 'gpt-message': !message.isFromUser}">
+      <div class="message-bubble">
+        {{ message.content }}
+      </div>
+    </div>
+  </div>
+
+ <!--  <div class="chat-input">
+    <input
+    [(ngModel)]="userMessage"
+    (keyup.enter)="sendMessage(userMessage)"
+    placeholder="Escribe un mensaje..."
+    #voiceInput
+  />
+    <button (click)="sendMessage(userMessage)">Enviar</button>
+  </div>
+</div>-->
+<!-- FIN CHAT ARTIFICAL -->

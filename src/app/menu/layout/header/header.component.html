@@ -1,0 +1,74 @@
+
+<!-- HEADER PARA DISPOSITIVOS MAYORES A 1000PX -->
+<div class="header" *ngIf="!isMobile">
+    <div class="header-arriba">
+      <div class="logo-container">
+        <img src="assets/images/agrisoft.png" alt="Logo" width="53" height="53">
+        <span><b>AGRISOFT</b></span>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar" class="search-input">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      <div class="user-section">
+        <span class="user-info"><b><a href="opcion">Registrate</a></b> | <a href="/login">Iniciar Sesión</a></span>
+        <img src="assets/images/vector.png" alt="Usuario">
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="section"><a href="#">REPORTES<br>EN VIVO</a></div>
+      <div class="divider"></div>
+      <div class="section"><a href="#">REPORTAR<br>PLAGA</a></div>
+      <div class="divider"></div>
+      <div class="section"><a href="#">ATENCIÓN<br>AGRARIA</a></div>
+      <div class="divider"></div>
+      <div class="section"><a href="#">CONSEJOS<br>AGRARIOS</a></div>
+      <div class="divider"></div>
+      <div class="section"><a href="#">VER INFORMES<br>PUBLICADOS</a></div>
+      <div class="divider"></div>
+      <div class="section"><a href="#">VER PRODUCTOS<br>DE PROVEEDORES</a></div>
+      <div class="divider"></div>
+      <div class="section"><a href="#">VER PLAGAS<br>REPORTADAS</a></div>
+      <div class="divider"></div>
+      <div class="section"><a href="#">CONOCE NUESTROS<br>OBJETIVOS</a></div>
+    </div>
+</div>
+
+<!-- FIN DE HEADER PARA DISPOSITIVOS MAYO A 1000 PX -->
+
+<!-- INICIO DE HEADER PARA DISPOSITIVOS MENORES A 1000 PX -->
+<header class="mobile-header" *ngIf="isMobile">
+    <div class="logo-movil">
+      <div>
+        <img src="assets/images/logo-movil.png" alt="Logo" width="53" height="53">
+        <span><b>AGRISOFT</b></span>
+      </div>
+      <div class="search-movil">
+        <div class="search-container">
+          <input type="text" placeholder="Buscar" class="search-input-movil">
+          <i class="fas fa-search search-icon-movil"></i>
+        </div>
+      </div>
+    </div>
+    <div class="logo-movil">
+      <button class="menu-btn-movil" (click)="toggleMenu()">
+        <span>&#9776;</span>
+      </button>
+      <div class="user-section-movil">
+        <span class="user-info-movil"><b>Usuario</b> | Iniciar Sesión</span>
+        <img src="assets/images/vector.png" alt="Usuario" width="30" height="30">
+      </div>
+    </div>
+
+    <nav class="nav-links" [ngClass]="{ 'show': isMenuOpen }">
+        <div class="container-a-movil"><a class="container-b-movil" href="#">REPORTES EN VIVO</a></div>
+        <div class="container-a-movil"><a class="container-b-movil" href="#">REPORTAR PLAGA</a></div>
+        <div class="container-a-movil"><a class="container-b-movil" href="#">ATENCIÓN AGRARIA</a></div>
+        <div class="container-a-movil"><a class="container-b-movil" href="#">CONSEJOS AGRARIOS</a></div>
+        <div class="container-a-movil"><a class="container-b-movil" href="#">VER INFORMES PUBLICADOS</a></div>
+        <div class="container-a-movil"><a class="container-b-movil" href="#">VER PRODUCTOS DE PROVEEDORES</a></div>
+        <div class="container-a-movil"><a class="container-b-movil" href="#">VER PLAGAS REPORTADAS</a></div>
+        <div class="container-a-movil"><a class="container-b-movil" href="#">CONOCE NUESTROS OBJETIVOS</a></div>
+    </nav>
+</header>
+<!-- FIN DE HEADER PARA DISPOSITIVOS MENORES A 1000 PX -->

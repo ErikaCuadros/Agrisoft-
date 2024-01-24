@@ -1,0 +1,15 @@
+.content {
+    margin-left: 16%; /* Ancho de la barra lateral */
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 0;      
+    }
+    app-sidebar{
+      position: relative;
+      right: 200px;
+    }
+  }
+  
