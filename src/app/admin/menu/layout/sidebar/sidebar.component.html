@@ -1,0 +1,39 @@
+<div [ngClass]="{'sidebar': true, 'collapsed': isCollapsed}">
+    <!--<button style="margin-top: 10px;" class="btn btn-outline-light" (click)="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>-->
+    <ul class="list-group">
+      <li class="text-center" style=" background: #009A50; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+        <a class="navbar-brand" href="">
+          <img style="width: 200px; margin-left: 2%; margin-bottom: 5px; margin-top: 5px;" src="../../../../assets/img/Logoadmin.png" alt="Logo">
+        </a>
+      </li>
+      <details class="dropdown">
+          <summary>Ver perfiles</summary>
+        <ul class="dropdown-menu">
+          <li><a href="listaprofecionales"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-id-badge"></i>
+            Perfiles de Profecionales</button></a></li>
+          <li><a href="listausuarios"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-id-badge"></i>
+            Perfiles de Usuario</button></a></li>
+          <li><a href="listaproveedores"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-id-badge"></i>
+            Perfiles de Proveedores</button></a></li>
+        </ul>
+      </details>
+      <details class="dropdown">
+        <summary>Ver informacion</summary>
+      <ul class="dropdown-menu">
+        <li><a href="/reporteusuario"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-id-badge"></i>
+          Reporte de usuarios</button></a></li>
+        <li><a href="/listainformes"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-list"></i>
+          Lista de Informes de los profecionales</button></a></li>
+      </ul>
+    </details>
+    <details class="dropdown">
+      <summary>Subir informacion</summary>
+    <ul class="dropdown-menu">
+      <li><a href="/formulario"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-pen"></i>
+        Reportar Plaga</button></a></li>
+      <li><a href="/listaplagas"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-list"></i>
+        Lista de plagas reportadas</button></a></li>
+    </ul>
+  </details>
+    </ul>
+  </div>

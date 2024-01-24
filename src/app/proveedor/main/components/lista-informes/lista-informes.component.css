@@ -1,0 +1,39 @@
+.content {
+  margin-left: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 90px;
+  padding: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #95d0d0;
+}
+
+.my-button-1 {
+  background-color: #048d04;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.-button-2 {
+  background-color: #b10000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}

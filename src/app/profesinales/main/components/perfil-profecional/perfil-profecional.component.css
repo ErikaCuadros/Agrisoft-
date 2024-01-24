@@ -1,0 +1,46 @@
+.perfil {
+	width: 300px;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.perfil h1 {
+	margin-top: 0;
+}
+
+.info {
+	margin-bottom: 20px;
+}
+
+.eliminar, .editar {
+	padding: 5px 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.eliminar:hover, .editar:hover {
+	background-color: #3e8e41;
+}
+
+.cerrar-sesion {
+	padding: 5px 10px;
+	background-color: #f44336;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.cerrar-sesion:hover {
+	background-color: #d32f2f;
+}

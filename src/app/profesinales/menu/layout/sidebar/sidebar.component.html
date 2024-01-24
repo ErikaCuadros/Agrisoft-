@@ -1,0 +1,20 @@
+<div [ngClass]="{'sidebar': true, 'collapsed': isCollapsed}">
+    <!--<button style="margin-top: 10px;" class="btn btn-outline-light" (click)="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>-->
+    <ul class="list-group">
+      <li class="text-center" style=" background: #096c00; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+        <a class="navbar-brand" href="">
+          <img style="width: 200px; margin-left: 2%; margin-bottom: 5px; margin-top: 5px;" src="../../../../assets/img/logoProfesional.png" alt="Logo">
+        </a>
+      </li>
+      <a href="/listainformes"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-list"></i>
+          Lista de Informes</button></a>
+      <a href="/publicarinforme"><button style="height: 10vh;" class="list-group-item"><i
+            class="fa-solid fa-file-pen"></i> Añadir Informe</button></a>
+      <a href="listareportes"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-id-badge"></i>
+          Lista de reportes de usuario</button></a>
+      <a href="/publicarconsejo"><button style="height: 10vh;" class="list-group-item"><i
+          class="fa-solid fa-file-pen"></i> Añadir Consejo</button></a>
+      <a href="/listaconsejos"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-list"></i>
+          Lista de Consejos publicados</button></a>
+    </ul>
+  </div>

@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.report-card {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.report-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.report-card p {
+  margin: 5px 0;
+}
+
+.report-card img {
+  width: 100%;
+  height: auto;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button {
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 5px 10;
+  border-radius: 5px;
+  cursor: pointer;
+}

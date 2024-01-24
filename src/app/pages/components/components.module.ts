@@ -9,18 +9,18 @@ import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
-    HomeComponent,
     PerfilesProfecionalesComponent,
     ConsejosComponent,
     InforrmesComponent,
-    ProductosComponent
+    ProductosComponent,
+    HomeComponent
   ],
   exports:[
-    HomeComponent,
     PerfilesProfecionalesComponent,
     ConsejosComponent,
     InforrmesComponent,
-    ProductosComponent
+    ProductosComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,

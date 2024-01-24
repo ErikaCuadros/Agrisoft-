@@ -1,0 +1,18 @@
+<div [ngClass]="{'sidebar': true, 'collapsed': isCollapsed}">
+    <!--<button style="margin-top: 10px;" class="btn btn-outline-light" (click)="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>-->
+    <ul class="list-group">
+      <li class="text-center" style=" background: #009494; width: 100%; padding-top: 10px; padding-bottom: 10px;">
+        <a class="navbar-brand" href="">
+          <img style="width: 171px; margin-left: 2%; margin-bottom: 5px; margin-top: 5px;" src="../../../../assets/img/logo1.png" alt="Logo">
+        </a>
+      </li>
+      <a href="/publicarproducto"><button style="height: 10vh;" class="list-group-item"><i
+            class="fa-solid fa-file-pen"></i> Añadir Productos</button></a>
+      <a href="/listaproducto"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-list"></i>
+            Lista Productos</button></a>
+      <a href="/listaperfiles"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-id-badge"></i>
+          Lista de Profecionales</button></a>
+      <a href="/listainformes"><button style="height: 10vh;" class="list-group-item"><i class="fa-solid fa-list"></i>
+          Lista de Informes publicados</button></a>
+    </ul>
+  </div>

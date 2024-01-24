@@ -1,0 +1,44 @@
+.content {
+  margin-left: 100px;
+}
+
+.product-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(2, 61, 72, 0.256);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.product-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-section input,
+.product-section textarea,
+.product-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #2bcddf;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.product-section .publish-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2bcddf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-section .publish-button:hover {
+  background-color: #2bcddf;
+}

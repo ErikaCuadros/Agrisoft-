@@ -1,0 +1,89 @@
+.content {
+  margin-left: 100px;
+}
+
+#search-box {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#export-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 350px;
+  margin-bottom: 25px;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 2px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: #333;
+}
+
+.page-numbers:hover {
+  background-color: #ddd;
+}
+
+.page-numbers.current {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.page-numbers.dots {
+  padding: 8px 16px;
+  margin: 0 2px;
+  background-color: transparent;
+  color: #ccc;
+}
+
+#export-btn:hover {
+  background-color: #45a049;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 90px;
+  padding: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #acf498;
+}
+
+.my-button-1 {
+  background-color: #048d04;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

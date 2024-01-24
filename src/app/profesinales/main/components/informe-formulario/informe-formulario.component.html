@@ -1,0 +1,29 @@
+<form class="informe-form">
+  <h2 class="informe-title">Informe investigativo sobre plagas agrarias o informes agro</h2>
+  <p class="informedescription">Tu informe inicial pasará a ser revisado por un administrador para continuar con la segunda parte parcial.</p>
+
+  <label for="title" class="informe-label">Título:</label>
+  <input type="text" id="title" name="title" required class="informe-input">
+
+  <label for="reportType" class="informe-label">Tipo de Informe:</label>
+  <select id="reportType" name="reportType" required class="informe-select">
+     <option value="informe">Informe</option>
+     <option value="informeTecnico">Informe técnico</option>
+  </select>
+
+  <!-- Aquí es donde agregamos el cuadro de texto para el informe -->
+  <label for="reportText" class="informe-label">Texto del informe:</label>
+  <textarea id="reportText" name="reportText" required class="informe-input"></textarea>
+
+  <label for="imageFile" class="informe-label">Selecionar archivo de img:</label>
+  <input type="file" id="imageFile" name="imageFile" accept="image/*" required class="informe-input">
+
+
+
+  <button type="button" class="informe-button">Ponte en contacto con un profesional</button>
+
+  <button type="submit" class="informe-button">Publicar mi informe técnico</button>
+
+  <h3 class="informe-subtitle">Ver contactos</h3>
+  <p class="informe-description">Aquí puedes mostrar los contactos de profesionales relacionados con el tema.</p>
+ </form>
